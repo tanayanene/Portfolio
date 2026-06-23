@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  font-family: "Google Sans", sans-serif;
+}
+
+html.dark {
+  color-scheme: dark;
+  --scrollbar-track: #08083b;
+  --scrollbar-thumb: #aa392d;
+  --scrollbar-thumb-hover: #d95f4e;
+}
+
+html.light {
+  color-scheme: light;
+  --scrollbar-track: #eef9ffff;
+  --scrollbar-thumb: #aa392d;
+  --scrollbar-thumb-hover: #d95f4e;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: var(--scrollbar-track);
+  color: inherit;
+  scrollbar-gutter: stable;
+}
+
+html,
+body,
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 999px;
+  border: 2px solid var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
